@@ -3,5 +3,5 @@
 
 
 
-windows cmd 格式化输出: https://github.com/founddev/evething/win_cmd
+windows cmd 格式化输出: https://github.com/founddev/evething/tree/master/cmd_win
 
