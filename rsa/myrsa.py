@@ -1,14 +1,6 @@
 
 import rsa
 
-m = '86584afb2a8d053ff3bbe054c628521334b40a1e9f0a33308fc95fe8eea227d822a5ea45cfad9bd1c5f89fdb46c5180bfc20f44202fa2d474260e6bca9ffa2d221365f142cd7a022fa8aead20a33f3991447fb085d84b144154f3f728a69166320b3c23745ac464b081add448753f0c8a8c0afe0ef9fbcb7a10710339421c0d7'
-e = '10001'
-
-message = '12345678'
-
-dist = '5d6f2b45d89f530e6270c77a2823dbb00bd588a76a9ea872ec8251a4ac32be28102365e9fdde9c1f23f2065ce3baf8bb2a3f84d9a78567752bada6a8e34f0c88d469f2b17f21af50112afd8933d86246bc3a3d8e8e9c441047254999e81c6e1dd9140384e24002a68057328c9123dafe49d74e05afdadba92c4e960883ca777f'
-
-
 class Encrypt(object):
     def __init__(self,e,m):
         self.e = e
@@ -44,8 +36,6 @@ class Encrypt(object):
 
         return block
 
-en = Encrypt(e,m)
-print(en.encrypt(message))
-
-
-
+def encrypt(e,m,message):
+	en = Encrypt(e,m)
+	return en.encrypt(message)
